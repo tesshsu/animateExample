@@ -1,0 +1,19 @@
+/*!
+ * js css
+ */
+.allbody{ 
+padding: 2em;
+}
+.jumbotron{
+border-radius: 16px; padding: 10px;
+}
+.imgdemo{
+border-radius: 10px; 
+border: 5px solid #f4fa02;
+-webkit-transition-duration: 1.5s; /* Safari */
+    transition-duration: 1.5s;
+}
+.ouf{
+float:left;
+margin-top: 80px;
+}

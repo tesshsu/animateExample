@@ -5,9 +5,10 @@
 <title>AnimateExample</title>
 <head>
     <!--css-->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+	 <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.css">
 	 <link rel="stylesheet" href="css/animate.css">
-
+	<link rel="stylesheet" href="css/demo.css">
 </head>
 	
 <body class="allbody">
@@ -120,8 +121,8 @@
  <div id="demoImg4" class="col-lg-4 col-sm-12 col-md-6">  
    <img src="img/4.png" class="bird"> 
    <img src="img/4-1.png" class="hide bird2">   
-   <h3>slide</h3>
-   <p>click to see slide animate</p> 
+   <h3>FlipIn</h3>
+   <p>click to see flip animate</p> 
   </div>  
   <div id="demoImg5" class="col-lg-4 col-sm-12 col-md-6">
    <img src="img/5-1.png" class="smallPenguin">
@@ -169,10 +170,10 @@
 </div>
  <div class="row">
   <div id="readmore" class="col-lg-4 col-sm-12 col-md-6">
-   <div id="panel6" class="panels" style=" cursor: move; z-index: 46">
-		<div id="title6" style="display: none;"><span>&nbsp;TITLE | THIS IS THE TITLE</span></div>
-		<div id="picture61"><img src="http://logopond.com/logos/1250340c662adff8b1d4e000b50ffac3.png"/></div> 
-		<div id="picture62" style="display: none;height: 0;"><img src="http://logopond.com/logos/37bbac5a2bc24f97a2882ea1280df0d9.png"/></div>
+   <div id="panel1" class="panels" style=" cursor: move; z-index: 46">
+		<div class="title" style="display: none;"><span>&nbsp;TITLE | THIS IS THE TITLE</span></div>
+		<div class="picture1"><img src="http://logopond.com/logos/1250340c662adff8b1d4e000b50ffac3.png"/></div> 
+		<div class="picture2" style="display: none;height: 0;"><img src="http://logopond.com/logos/37bbac5a2bc24f97a2882ea1280df0d9.png"/></div>
 		<div class="more-less" style="display: none;">
             <span style=" cursor: pointer" class="read-less hidden">READ LESS</span>
             <span style=" cursor: pointer" class="read-more">READ MORE</span>
@@ -180,11 +181,11 @@
 	</div>
 	</div>
 	
-   <div id="readmore2" class="col-lg-4 col-sm-12 col-md-6">
-   <div id="panel6" class="panels" style=" cursor: move; z-index: 46">
-		<div id="title6" style="display: none;"><span>&nbsp;TITLE | THIS IS THE TITLE</span></div>
-		<div id="picture61"><img src="http://logopond.com/logos/1250340c662adff8b1d4e000b50ffac3.png"/></div> 
-		<div id="picture62" style="display: none;height: 0;"><img src="http://logopond.com/logos/37bbac5a2bc24f97a2882ea1280df0d9.png"/></div>
+	  <div id="readmore2" class="col-lg-4 col-sm-12 col-md-6">
+   <div id="panel1" class="panels" style=" cursor: move; z-index: 46">
+		<div class="title" style="display: none;"><span>&nbsp;TITLE | THIS IS THE TITLE</span></div>
+		<div class="picture1"><img src="http://logopond.com/logos/1250340c662adff8b1d4e000b50ffac3.png"/></div> 
+		<div class="picture2" style="display: none;height: 0;"><img src="http://logopond.com/logos/37bbac5a2bc24f97a2882ea1280df0d9.png"/></div>
 		<div class="more-less" style="display: none;">
             <span style=" cursor: pointer" class="read-less hidden">READ LESS</span>
             <span style=" cursor: pointer" class="read-more">READ MORE</span>
@@ -192,39 +193,43 @@
 	</div>
 	</div>
 	
-	<div id="readmore3" class="col-lg-4 col-sm-12 col-md-6">
-   <div id="panel6" class="panels" style=" cursor: move; z-index: 46">
-		<div id="title6" style="display: none;"><span>&nbsp;TITLE | THIS IS THE TITLE</span></div>
-		<div id="picture61"><img src="http://logopond.com/logos/1250340c662adff8b1d4e000b50ffac3.png"/></div> 
-		<div id="picture62" style="display: none;height: 0;"><img src="http://logopond.com/logos/37bbac5a2bc24f97a2882ea1280df0d9.png"/></div>
+	  <div id="readmore3" class="col-lg-4 col-sm-12 col-md-6">
+   <div id="panel1" class="panels" style=" cursor: move; z-index: 46">
+		<div class="title" style="display: none;"><span>&nbsp;TITLE | THIS IS THE TITLE</span></div>
+		<div class="picture1"><img src="http://logopond.com/logos/1250340c662adff8b1d4e000b50ffac3.png"/></div> 
+		<div class="picture2" style="display: none;height: 0;" ><img src="http://logopond.com/logos/37bbac5a2bc24f97a2882ea1280df0d9.png"/></div>
 		<div class="more-less" style="display: none;">
             <span style=" cursor: pointer" class="read-less hidden">READ LESS</span>
             <span style=" cursor: pointer" class="read-more">READ MORE</span>
         </div>
 	</div>
 	</div>
+	
+
+	
+
 	
 </div>
   
 <!--popup motion-->
- <div id="dialog" style="z-index:10;">
-  <div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> Better check yourself, you're not looking too good.
-  <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    60%
-  </div>
-</div>
-</div>
+ <div id="dialog">
+ <p>
+	  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+	  <div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+			60%
+		</div>
+
+		</div>
+	 </p>	
 </div>
 
 
 	 <!--javascript-->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/bootstrap.min.js"></script>
+<script src="assets/jquery-ui/jquery-ui.js"></script>
 <script src="js/dist/animate.js"></script>
-<script src="js/popup.js"></script>
+
 </body>
 </html>

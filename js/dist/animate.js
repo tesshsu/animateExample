@@ -127,5 +127,30 @@ $(document).ready(function(){
     $("#badge").click(function(){
     $( "#dialog" ).dialog( "open" );
 	$next();
-  });	
+  });
+  // read more expand function
+    $(function () {
+	$("#panel6").hover(function () {
+		$(this).children("#title6, .more-less").fadeToggle(1000);
+	});
+    $('.read-more').on('click', function(){
+        $('#picture62').css('display', 'block' ).animate({
+                'height':$('#picture62 img').height()
+            }, 300 , function(){
+				$(this).height('auto')
+			});
+        $('.more-less > span').toggleClass('hidden'); 
+    });
+    
+    $('.read-less').on('click', function(){
+        $('#picture62').animate({
+                'height':0
+            }, 300 , function(){
+				$(this).css('display','none');
+			});
+        $('.more-less > span').toggleClass('hidden'); 
+
+    });
+});
+
 });

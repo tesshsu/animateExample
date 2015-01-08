@@ -11,8 +11,9 @@
 </head>
 	
 <body class="allbody">
+<div id="githubTag"><a href="https://github.com/tesshsu/animateExample.git">tess_github</a></div>
 <div class="jumbotron">
-  <h1 id="demo">Here you could use the animate <small>attention! some animate may not support IE9 or earlier version</small></h1>
+  <h3 id="demo">Here you could use the animate <small>attention! some animate may not support IE9 or earlier version</small></h3>
 </div>
 <!--library text animate demo1-3-->
 <div class="page-header">
@@ -131,9 +132,9 @@
   </div>
     
   <div id="demoImg6" class="col-lg-4 col-sm-12 col-md-6">
-   <img src="img/6.png" class="eagle">        
-   <h3>bounce</h3>
-   <p>Click to see bunce animate</p>
+   <img src="img/rocket.png" class="rocket">        
+   <h3>Fly</h3>
+   <p>Click to see fly animate</p>
   </div>
 </div>
 <!--library cell animate-->
@@ -142,29 +143,37 @@
 </div>
 <div class="row">
    <div class="list-group">
-  <li href="#" class="list-group-item active">
+   <div id="democell0">
+  <li href="#" class="cell0 list-group-item active">
     Fisrt list cell
   </li>
+   </div>
   <div id="democell">
-  <li class="cell list-group-item">second list cell animate, click to view the affect<span class="badge">more</span></li>
+  <li class="cell list-group-item">second list cell animate, click to view the affect</li>
   </div>
   <div id="democell2">
-  <li class="cell2 list-group-item">third list cell<span class="badge">more</span></li>
+  <li class="cell2 list-group-item">third list cell, click to view the affect</li>
   </div>
   <div id="democell3">
-  <li class="cell3 list-group-item">fourth list cell<span class="badge">more</span></li>
+  <li class="cell3 list-group-item">fourth list cell, click to view the affect</li>
   </div>
   <div id="democell4">
-  <li class="cell4 list-group-item">fifth list cell<span class="badge">more</span></li>
+  <li class="cell4 list-group-item">fifth list cell, click the more button <span><button id="badge" class="btn btn-danger">more</button></span></li>
+  
   </div>
   </div>
+
+  
 <!--popup motion-->
- <div class="hide popupview">
+ <div id="dialog" style="z-index:10;">
   <div class="alert alert-warning alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
 </div>
- </div>
 </div>
 </div>
 

@@ -42,7 +42,7 @@ $(document).ready(function(){
    });
    
   $("#demoImg6").click(function(){
-   $("img.eagle").effect("bounce", "slow");   
+   $("img.rocket").toggleClass('rocketfly');   
   });
   
    //Animation for text 
@@ -103,16 +103,29 @@ $(document).ready(function(){
    });
    
    //Animation for cell
+    $("li.cell0").hover(function(){
+	    $( this ).addClass( "cellbigger" );},
+		function() {
+		$( this ).removeClass( "cellbigger" );
+		}
+     );
+   
+	
    $("#democell").click(function(){
    $("li.cell").toggleClass('animated zoomIn', 'slow');
     });
+	
 	$("#democell2").click(function(){
    $("li.cell2").toggleClass('animated lightSpeedIn','slow');
     });
+	
 	$("#democell3").click(function(){
    $("li.cell3").toggleClass('animated rubberBand','slow');
     });
-    $("badge").click(function(){
-    $(".popupview").removeClass('hide').addClass('animated lightSpeedIn');
+	
+	$( "#dialog" ).dialog({ autoOpen: false });
+    $("#badge").click(function(){
+    $( "#dialog" ).dialog( "open" );
+	$next();
   });	
 });

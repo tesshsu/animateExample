@@ -5,10 +5,28 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 modified by Tess hsu
 */
-
+.allbody{
+ background-color: #F5F6F7;
+}
+#githubTag{
+ position: fixed;
+ top:-10px;
+ left: -10px;
+ z-index: 10;
+ float: left;
+}
+#githubTag a{
+  width:115px;
+  height: 115px;
+  opacity: 0.7;
+  text-indent: -8000px;
+  display: block;
+  background: url("../img/tag.png") no-repeat;
+}
+/* start animate part*/
 .animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -3175,6 +3193,27 @@ margin-top: 150px;
 }
 .water{
  z-index: -1;
- float: left;
- margin-top: -200px;
+ margin: -15vw 10vw 0 0;
+ position: relative;
+}
+.cellbigger{
+ background-color: #E3DFD6;
+ padding: 15px;
+ font-weight: bold;
+ border: 5px solid #2892CE;
+ -webkit-box-shadow: 6px -2px 30px -16px rgba(227,223,227,1);
+-moz-box-shadow: 6px -2px 30px -16px rgba(227,223,227,1);
+box-shadow: 6px -2px 30px -16px rgba(227,223,227,1);
+}
+.rocketfly{
+ -webkit-transform: translateY(-120vh);
+	-moz-transform: translateY(-120vh);
+	-ms-transform: translateY(-120vh);
+	-o-transform: translateY(-120vh);
+	transform: translateY(-120vh);
+
+	-webkit-transition: all 4s cubic-bezier(.98,0,1,.28);
+	-moz-transition: all 4s cubic-bezier(.98,0,1,.28);
+	-o-transition: all 4s cubic-bezier(.98,0,1,.28);
+	transition: all 4s cubic-bezier(.98,0,1,.28);
 }

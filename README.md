@@ -4,7 +4,7 @@ animateExample is animation affect by Jquery UI and css animation, it's almost c
 
 Usage
 ==============
-To use animateExample is just so simply, drop the stylesheet: demoanimate.css into your doucument's <head>, add javascript file, and That's it!! You could play and animate your element.
+To use animateExample is just so simply, drop the stylesheet: animate.css / demo.css into your doucument's <head>, add animate.js, and That's it!! You could play and animate your element.
 
 License
 ==============

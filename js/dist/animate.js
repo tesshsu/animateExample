@@ -120,7 +120,7 @@ $(document).ready(function(){
 	$("#democell3").click(function(){
    $("li.cell3").toggleClass('animated rubberBand','slow');
     });
-	
+// Animate for cell 4	
 $( "#dialog" ).dialog({
 	autoOpen: false,
 	width: 400,
@@ -144,6 +144,22 @@ $( "#dialog" ).dialog({
 		$( "#dialog" ).dialog( "open" );
 		event.preventDefault();
 	});
+	
+//Animate for cell 5
+ $('.carousel').carousel({
+      interval: 3000
+    })
+$( "#dialog2" ).dialog({
+	autoOpen: false,
+	width: 400,
+});
+	
+    $("#badge2").click(function( event ){
+		$( "#dialog2" ).dialog( "open" );
+		event.preventDefault();
+	});
+	 
+     
   // read more expand function
 	$("#readmore > .panels").hover(function () {
 		$(this).children(".title, .more-less").fadeToggle(1000);
@@ -165,57 +181,5 @@ $( "#dialog" ).dialog({
 			});
         $('#readmore .more-less > span').toggleClass('hidden'); 
     });
-	
-	// readmore 2
-	
-	$("#readmore2 > .panels").hover(function () {
-		$(this).children(".title, .more-less").fadeToggle(1000);
-	});
-    $('#readmore2 .read-more').on('click', function(){
-        $('#readmore2 .picture2').css('display', 'block' ).animate({
-                'height':$('#picture1_2 img').height()
-            }, 300 , function(){
-				$(this).height('auto')
-			});
-        $('#readmore2 .more-less > span').toggleClass('hidden'); 
-    });
-    
-    $('#readmore2 .read-less').on('click', function(){
-        $('#readmore2 .picture2').animate({
-                'height':0
-            }, 300 , function(){
-				$(this).css('display','none');
-			});
-        $('#readmore2 .more-less > span').toggleClass('hidden'); 
-    });
-	
-	// readmore 3
-	
-	$("#readmore3 > .panels").hover(function () {
-		$(this).children(".title, .more-less").fadeToggle(1000);
-	});
-    $('#readmore3 .read-more').on('click', function(){
-        $('#readmore3 .picture2').css('display', 'block' ).animate({
-                'width':$('#picture1_2 img').width()
-            }, 300 , function(){
-				$(this).height('auto')
-			});
-        $('#readmore3 .more-less > span').toggleClass('hidden'); 
-    });
-    
-    $('#readmore3 .read-less').on('click', function(){
-        $('#readmore3 .picture2').animate({
-                'height':0
-            }, 300 , function(){
-				$(this).css('display','none');
-			});
-        $('#readmore3 .more-less > span').toggleClass('hidden'); 
-    });
-	
-
-	
-	
-	
-	
 
 });

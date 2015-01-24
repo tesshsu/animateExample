@@ -1,6 +1,7 @@
 animateExample
 ==============
 animateExample is animation affect by Jquery UI and css animation, it's almost cross-browser animate for using any front end project. Attention: somme animate might not support IE9 or ealier version.
+Demo Link: http://www.tesshsu.com/demo/animateExample/
 
 Usage
 ==============
